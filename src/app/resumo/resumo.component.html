@@ -1,0 +1,18 @@
+<h1>Resumo</h1>
+<h5 class="card-title">Total de notícias</h5>
+<div class="mt-1 card-deck">
+  <div class="card">
+    <div class="card-body">
+      <p>{{(noticia|async).length}} notícia(s) publicada(s)</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Ranking de Autores</h5>
+    <div class="card" *ngFor="let a of aut | async">
+      <p class="card-text" style="font-size: 3em">{{a.nome}}</p>
+    </div>
+    
+  </div>
+</div>
